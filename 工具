@@ -1,0 +1,12 @@
+几个重要的工具
+import numpy as np数字计算
+import scipy数字计算
+import pandas as pd借用r的数据结构
+import sklearn集成机器学习的工具
+import keras.backend as K深度学习
+import tensorflow as tf
+np.dot与np.matmul的区别
+np.matmul禁止矩阵与标量的乘法；
+np.matmul在矢量的内积运算中，matmul与dot没区别；
+np.matmul多维的矩阵，将前n-2维视为后2维的元素后，进行乘法操作。
+np.dot的定义：dot(a,b)[i,j,k,m]=sum(a[i,j,:]*b[k,:,m])
